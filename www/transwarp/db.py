@@ -248,10 +248,10 @@ if __name__ == "__main__":
 
     logging.basicConfig(level=logging.DEBUG)
 
-    create_engine('root', '123456', 'test')
+    create_engine('root', '123456', 'demo')
 
     result = select("select * from user")
 
     for v in result:
-        print("uid= %s,logintime= %s " % (v.uid, v.logintime))
+        print("uid= %s" % v.name)
 
